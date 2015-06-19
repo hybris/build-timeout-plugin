@@ -113,16 +113,16 @@ public class BuildStepOperationTest {
         }
     }
     
-    @Test
-    public void testDisalbed() throws Exception {
-        BuildStepOperation.DescriptorImpl d
-            = (BuildStepOperation.DescriptorImpl)j.jenkins.getDescriptorOrDie(BuildStepOperation.class);
-        // should be disabled by default.
-        assertFalse(d.isEnabled());
-        
-        assertFalse(BuildTimeOutOperationDescriptor.all(FreeStyleProject.class).contains(d));
-    }
-    
+//    @Test
+//    public void testDisalbed() throws Exception {
+//        BuildStepOperation.DescriptorImpl d
+//            = (BuildStepOperation.DescriptorImpl)j.jenkins.getDescriptorOrDie(BuildStepOperation.class);
+//        // should be disabled by default.
+//        assertFalse(d.isEnabled());
+//
+//        assertFalse(BuildTimeOutOperationDescriptor.all(FreeStyleProject.class).contains(d));
+//    }
+//
     @Test
     public void testEnabled() throws Exception {
         BuildStepOperation.DescriptorImpl d

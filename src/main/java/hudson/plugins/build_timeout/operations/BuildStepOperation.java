@@ -182,7 +182,7 @@ public class BuildStepOperation extends BuildTimeOutOperation {
     
     @Extension
     public static class DescriptorImpl extends BuildTimeOutOperationDescriptor {
-        private boolean enabled = false;
+        private boolean enabled = true;
         
         public DescriptorImpl() {
             load();
